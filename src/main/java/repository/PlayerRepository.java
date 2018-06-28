@@ -12,6 +12,12 @@ public interface PlayerRepository {
 	List<PlayerBean> getAll();
 	
     /**
+     * Permet de rechercher un PlayerBean à partir de son identifiant
+     * @return PlayerBean
+     */
+	PlayerBean get(Long id);
+	
+    /**
      * Permet d'ajouter un nouvel enregistrement de PlayerBean
      * @param player
      */

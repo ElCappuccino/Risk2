@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 import beans.AdjacencyBean;
-import beans.PlayerBean;
 import beans.RegionBean;
 import beans.RuleBean;
 import beans.ZoneBean;
@@ -24,7 +23,6 @@ import dao.ZoneDAO;
 public class BeanCreator {
 	private MapDAO dao;
 	private RuleBean rule;
-	private List<PlayerBean> listPlayers;
 	private List<RegionBean> listRegions;
 	private List<ZoneBean> listZones;
 	
@@ -100,25 +98,6 @@ public class BeanCreator {
 	 */
 	public RuleBean getRule() {
 		return rule;
-	}
-	
-	/**
-	 * Initialise la liste des joueurs
-	 * @param listName Liste des noms de joueur
-	 * @return Null si nombre de joueurs incorrect, la liste de joueurs dans le cas contraire
-	 */
-	public List<PlayerBean> setPlayers(List<String> listName, Integer initial) {
-		int nbPlayers = listName.size();
-		
-		this.rule.setPlayers(nbPlayers);
-		this.rule.setInitial(initial);
-		
-		listPlayers = new ArrayList<>();
-		for(int i = 0; i < nbPlayers; i++) {
-			PlayerBean playerBean = new PlayerBean(listName.get(i), initial);
-			listPlayers.add(playerBean);
-		}
-		return listPlayers;
 	}
 	
 	public List<RegionBean> getRegions() {

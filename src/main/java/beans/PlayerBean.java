@@ -9,6 +9,7 @@ import java.util.List;
  */
 
 public class PlayerBean {
+	private int id;
 	private String name;
 	private Integer initial;
 	private List<RegionBean> regions;
@@ -18,10 +19,25 @@ public class PlayerBean {
 	 * @param name Nom du joueur
 	 * @param initial Nombre de troupe du joueur
 	 */
-	public PlayerBean(String name, int initial) {
+	public PlayerBean(int id, String name, int initial) {
+		this.id = id;
 		this.name = name;
 		this.initial = initial;
 		this.regions = new ArrayList<>();
+	}
+	
+	/**
+	 * @return the id
+	 */
+	public int getId() {
+		return id;
+	}
+
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	/**
