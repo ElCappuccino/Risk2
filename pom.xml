@@ -18,6 +18,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<jdk.version>1.8</jdk.version>
 		<json.path.version>0.8.1</json.path.version>
+		<jackson.version>2.4.4</jackson.version>
 	</properties>
 
 	<build>
@@ -80,6 +81,23 @@
 			<artifactId>json-path-assert</artifactId>
 			<version>${json.path.version}</version>
 			<scope>test</scope>
+		</dependency>
+		<!-- dépendances pour jackson mapper -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>${jackson.version}</version>
 		</dependency>
 	</dependencies>
 </project>
