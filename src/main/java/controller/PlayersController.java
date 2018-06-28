@@ -18,7 +18,7 @@ public class PlayersController {
     @Resource
     private PlayerRepository playerRepository;
 
-    @RequestMapping(value="/player-list", method=RequestMethod.GET)
+    @RequestMapping(value="/players", method=RequestMethod.GET)
     public List<PlayerBean> getAllPlayers(){
     	return playerRepository.getAll();
     }

@@ -23,7 +23,7 @@ public class PlayerRepositoryImpl implements PlayerRepository{
 	
 	@Override
 	public PlayerBean get(Long id) {
-      String GET_PLAYER_BY_ID = "select * from player where player_id=?";
+      String GET_PLAYER_BY_ID = "select * from player where id=?";
       return  jt.queryForObject(GET_PLAYER_BY_ID, BeanPropertyRowMapper.newInstance(PlayerBean.class), id) ;
 	}
 
