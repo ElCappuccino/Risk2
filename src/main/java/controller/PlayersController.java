@@ -4,15 +4,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import beans.RuleBean;
+import beans.PlayerBean;
 
 @RestController
 @RequestMapping(value="/api")
 public class PlayersController {
 
-    @RequestMapping(value="/players", method=RequestMethod.GET)
-    public RuleBean getPlayers(){
+    @RequestMapping(value="/player-list", method=RequestMethod.GET)
+    public PlayerBean getPlayers(){
     	// TEST
-        return new RuleBean(4, 2, 0, 1);
+        return new PlayerBean("Paul", 2);
     }
 }
