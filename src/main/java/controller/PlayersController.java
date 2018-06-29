@@ -20,7 +20,8 @@ public class PlayersController {
 
     @RequestMapping(value="/players", method=RequestMethod.GET)
     public List<PlayerBean> getAllPlayers(){
-    	return playerRepository.getAll();
+    	List<PlayerBean> players = playerRepository.getAll();
+    	return players;
     }
     
     @RequestMapping(value="/player/{id}", method=RequestMethod.GET)

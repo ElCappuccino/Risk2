@@ -26,6 +26,10 @@ public class PlayerBean {
 		this.regions = new ArrayList<>();
 	}
 	
+	public PlayerBean() {
+		this.regions = new ArrayList<>();
+	}
+	
 	/**
 	 * @return the id
 	 */
