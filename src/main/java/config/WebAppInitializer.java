@@ -29,6 +29,7 @@ public class WebAppInitializer implements WebApplicationInitializer{
    ServletRegistration.Dynamic dispatcher = servletContext.addServlet("dispatcher", 
                                       new DispatcherServlet(dispatcherServlet));
    dispatcher.setLoadOnStartup(1);
-   dispatcher.addMapping("/");
+   // declaration de l'url qui sera ecouté par la servlet
+   dispatcher.addMapping("/api/*");
   }
 }

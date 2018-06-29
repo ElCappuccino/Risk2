@@ -13,7 +13,6 @@ import beans.PlayerBean;
 import repository.PlayerRepository;
 
 @RestController
-@RequestMapping(value="/api")
 public class PlayersController {
     @Resource
     private PlayerRepository playerRepository;

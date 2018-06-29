@@ -7,7 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>Risk2</name>
+	<name>risk</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -23,7 +23,7 @@
 	</properties>
 
 	<build>
-		<finalName>Risk2</finalName>
+		<finalName>risk</finalName>
 		<plugins>
 			<!-- Configuration du plugin de compilation -->
 			<plugin>
