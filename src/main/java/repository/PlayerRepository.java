@@ -21,14 +21,14 @@ public interface PlayerRepository {
      * Permet d'ajouter un nouvel enregistrement de PlayerBean
      * @param player
      */
-    void create(PlayerBean player);
+	PlayerBean create(String name);
     
     /**
      * 
      * Permet de supprimer un PlayerBean
      * @param player
      */
-    void delete(PlayerBean player);
+    Boolean delete(Long id);
 
     /**
      * Permet de mettre à jour un PlayerBean 
