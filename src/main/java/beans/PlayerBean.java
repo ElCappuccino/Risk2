@@ -28,6 +28,8 @@ public class PlayerBean {
 	
 	public PlayerBean() {
 		this.regions = new ArrayList<>();
+		this.name = "";
+		this.initial = 0;
 	}
 	
 	/**
